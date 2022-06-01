@@ -1,0 +1,38 @@
+@font-face {
+  font-family: OdinLogo;
+  src: url(assets/Norse-Bold.otf);
+}
+
+:root {
+  --blurb-text-color: #cfc3c3;
+  --background-color: #08080e;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+.splash-art {
+  width: 40%;
+}
+
+.splash-art > img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.section-form {
+  color: var(--blurb-text-color);
+  font-family: "PT Sans", sans-serif;
+}
