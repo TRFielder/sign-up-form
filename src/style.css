@@ -1,11 +1,13 @@
 @font-face {
-  font-family: OdinLogo;
+  font-family: LogoFont;
   src: url(assets/Norse-Bold.otf);
 }
 
 :root {
-  --blurb-text-color: #cfc3c3;
-  --background-color: #08080e;
+  --blurb-text-color: black;
+  --background-color: #1a1a24;
+  --logo-background-color: #1a1a249f;
+  --form-background-color: white;
 }
 
 html,
@@ -23,16 +25,53 @@ body {
   background-color: var(--background-color);
 }
 
-.splash-art {
-  width: 40%;
+.splash-container {
+  position: relative;
 }
 
-.splash-art > img {
-  max-width: 100%;
+.splash-art {
   max-height: 100vh;
+}
+
+.logo-overlay {
+  background-color: var(--logo-background-color);
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  color: var(--form-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.logo-overlay > p {
+  font-family: LogoFont;
+  font-size: 72px;
+}
+
+@media only screen and (max-width: 768px) {
+  .splash-art {
+    display: none;
+  }
 }
 
 .section-form {
   color: var(--blurb-text-color);
   font-family: "PT Sans", sans-serif;
+  background-color: var(--form-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-form > form {
+  width: 500px;
+}
+
+.form-input {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

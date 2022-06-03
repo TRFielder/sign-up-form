@@ -8,15 +8,50 @@
     <title>Signup Form</title>
   </head>
   <body>
-    <section class="splash-art">
+    <div class="splash-container">
       <img
+        class="splash-art"
         src="assets/jacob-dyer-QECoDzdYhuA-unsplash.jpg"
         alt="Man looking into starry night sky"
       />
-    </section>
+      <div class="logo-overlay"><p>SIGN ME UP</p></div>
+    </div>
+
     <section class="section-form">
-      This is not a real online service, but you wish it was. Sign up
-      <em>now</em> to get started today.
+      <p>
+        This is not a real online service, but you wish it was. Sign up
+        <em>now</em> to get started today.
+      </p>
+      <form>
+        <div class="form-input">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" />
+        </div>
+        <div class="form-input">
+          <label for="sname">Surname</label>
+          <input type="text" id="sname" name="sname" />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-input">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="form-input">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="form-input">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+          />
+        </div>
+      </form>
     </section>
   </body>
 </html>
